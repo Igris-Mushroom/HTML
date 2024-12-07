@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX 1</title>
+</head>
+<style>
+
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        height: calc(100vh - 8px);
+        padding: 4px;
+        gap: 5px;
+    }
+
+    .header{
+        display: flex;
+        border: 1px solid black;
+        padding: 4px;
+        justify-content: space-between;
+    }
+
+    .headergroup1{
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .redbox1{
+        width: 30px;
+        height: 30px;
+        background-color: red;
+    }
+
+    .headergroup2{
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .redbox2{
+        width: 40px;
+        height: 20px;
+        background-color: red;
+    }
+
+    .container{
+        display: flex;
+        flex-grow: 1;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        flex-grow: 1;
+        padding: 4px;
+        gap: 5px;
+    }
+
+    .subgroup1{
+        display: flex;
+        border: 1px solid black;
+        flex-wrap: wrap; 
+        padding: 6px;
+        gap: 5px;
+    }
+
+    .mainbox1{
+        width: 60px;
+        height: 60px;
+        border: 1px solid black;
+    }
+
+    .subgroup2{
+        display: flex;
+        border: 1px solid black;
+        flex-wrap: wrap; 
+        padding: 6px;
+        gap: 5px;
+        justify-content: space-between;
+    }
+
+    .mainbox2{
+        width: 150px;
+        height: 130px;
+        border: 1px solid black;
+    }
+
+    .aside{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        flex-wrap: wrap; 
+        padding: 4px;
+        gap: 5px;
+    }
+
+    .asidebox{
+        width: 180px;
+        height: 30px;
+        border: 1px solid black;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        padding: 5px;
+    }
+
+    .subgroup3{
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        padding-bottom: 4px;
+    }
+
+    .subgroup4{
+        display: flex;
+        flex-direction: column;
+        padding-top: 4px; 
+align-items: center;       }
+
+       .minigroup1{
+        display: flex;
+        gap: 4px;
+       }
+
+    .minibox{
+        width: 20px;
+        height: 20px;
+        background-color: red;
+    }
+
+</style>
+<body>
+    
+    <div class="header">
+        <div class="headergroup1">
+            <div class="redbox1"></div>
+            FLEXBOX
+        </div>
+
+        <div class="headergroup2">
+            <div class="redbox2"></div>
+            <div class="redbox2"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="main">
+            <div class="subgroup1">
+                <div class="mainbox1"></div>
+                <div class="mainbox1"></div>
+                <div class="mainbox1"></div>
+                <div class="mainbox1"></div>
+                <div class="mainbox1"></div>
+                <div class="mainbox1"></div>
+                <div class="mainbox1"></div>
+                <div class="mainbox1"></div>
+                <div class="mainbox1"></div>
+                <div class="mainbox1"></div>
+                <div class="mainbox1"></div>
+                <div class="mainbox1"></div>
+                <div class="mainbox1"></div>
+                <div class="mainbox1"></div>
+                <div class="mainbox1"></div>
+                <div class="mainbox1"></div>
+                <div class="mainbox1"></div>
+                <div class="mainbox1"></div>
+                <div class="mainbox1"></div>
+            </div>
+
+            <div class="subgroup2">
+                <div class="mainbox2"></div>
+                <div class="mainbox2"></div>
+                <div class="mainbox2"></div>
+            </div>
+        </div>
+
+        <div class="aside">
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="subgroup3">
+            <div class="redbox1"></div>
+            FLEXBOX
+        </div>
+        <hr>
+        <div class="subgroup4">
+            <div class="minigroup1">
+                <div class="minibox"></div>
+                <div class="minibox"></div>
+                <div class="minibox"></div>
+                <div class="minibox"></div>
+                <div class="minibox"></div>
+            </div>
+
+            <div class="minigroup2">
+                &copy;Copyright All right reserved.
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
